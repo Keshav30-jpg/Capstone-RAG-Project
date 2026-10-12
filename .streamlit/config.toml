@@ -1,0 +1,31 @@
+[theme]
+base = "light"
+primaryColor = "#0081F2"
+backgroundColor = "#F8F8F7"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#1A1A1A"
+linkColor = "#0081F2"
+borderColor = "#E5E7EB"
+blueColor = "#0081F2"
+violetColor = "#737373"
+grayColor = "#737373"
+baseRadius = "large"
+buttonRadius = "large"
+showWidgetBorder = true
+showSidebarBorder = true
+font = "'Optimistic Text', Helvetica, Arial, sans-serif"
+headingFont = "'Optimistic Display', 'Optimistic Text', Helvetica, Arial, sans-serif"
+baseFontSize = 16
+headingFontSizes = ["34px", "26px", "21px", "18px", "16px", "14px"]
+headingFontWeights = [700, 700, 700, 700, 700, 700]
+linkUnderline = false
+
+[theme.sidebar]
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F8F8F7"
+textColor = "#1A1A1A"
+borderColor = "#E5E7EB"
+primaryColor = "#0081F2"
+
+[server]
+maxUploadSize = 15
