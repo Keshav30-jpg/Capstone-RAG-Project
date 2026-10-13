@@ -83,25 +83,25 @@ SDK                               OpenAI Python SDK pointed at OpenRouter's base
 To Run Locally:
 Prerequisites: Python 3.13 (3.12 also works) and an OpenRouter API key.
 
-# 1. Clone the repo
+ 1. Clone the repo
 git clone https://github.com/Keshav30-jpg/Capstone-RAG-Project.git
 cd Capstone-RAG-Project
 
-# 2. Create and activate a virtual environment
+ 2. Create and activate a virtual environment
 python -m venv .venv
-# Windows PowerShell:
+ Windows PowerShell:
 .venv\Scripts\Activate.ps1
-# macOS / Linux:
+ macOS / Linux:
 source .venv/bin/activate
 
-# 3. Install dependencies
+ 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Add your API key
+ 4. Add your API key
 cp .env.example .env       # Windows: copy .env.example .env
-# then edit .env and set LLM_API_KEY=your-openrouter-key
+ then edit .env and set LLM_API_KEY=your-openrouter-key
 
-# 5. Start the app
+ 5. Start the app
 streamlit run app.py
 
 The app opens at http://localhost:8501
