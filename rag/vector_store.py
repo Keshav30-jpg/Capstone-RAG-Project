@@ -9,7 +9,7 @@ def _get_client():
      down while another session is trying to use it
 
     """
-    return chromadb.EphemeracalClient()
+    return chromadb.EphemeralClient()
 
 class VectorStore:
     """
