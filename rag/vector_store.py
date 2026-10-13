@@ -6,7 +6,7 @@ import streamlit as st
 def _get_client():
     """
     st.cache_resource keeps it alive across reruns and sessions, so it is never
-    torn down while another session is trying to use it
+     down while another session is trying to use it
 
     """
     return chromadb.EphemeracalClient()
