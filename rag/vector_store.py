@@ -1,15 +1,26 @@
+import uuid
 import chromadb
+import streamlit as st
+
+@st.cache_resource
+def _get_client():
+    """
+    st.cache_resource keeps it alive across reruns and sessions, so it is never
+    torn down while another session is trying to use it
+
+    """
+    return chromadb.EphemeracalClient()
 
 class VectorStore:
     """
-    One VectorStore wraps one ChromaDB collection for the current session.
-    All uploaded PDFs in a session share this same collection (per spec).
-    """
+    One VectorStore = one private collection for one user session.
 
+    """
     def __init__(self):
-        # EphemeralClient keeps data in memory. nothing is written to disk
-        self._client = chromadb.EphemeralClient()
-        self._collection = self._client.get_or_create_collection(name="session_pdfs")
+        self._client = _get_client()
+        # A random unique name gives each session its own collection, so users
+        self._collection = self._client.create_collection(name=f"session_{uuid.uuid4().hex}")
+
         
             
 
