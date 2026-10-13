@@ -131,7 +131,9 @@ The in-memory index disappears when the app restarts or sleeps.
 
 Interface of webpage:
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4256b0c4-643d-49a9-9288-026847e22520" />
+<img width="1920" height="957" alt="image" src="https://github.com/user-attachments/assets/6d64038e-8e65-43c0-9b14-0e2f3028abda" />
+
+
 
 
 
